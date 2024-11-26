@@ -2,6 +2,7 @@ const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  extends: ["next/core-web-vitals"],
   purge: {
     enabled: true,
     content: ["./**/*.html", "./*.html", "./**/*.js", "./*.js"],
